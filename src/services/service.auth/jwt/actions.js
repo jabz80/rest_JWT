@@ -34,3 +34,5 @@ const verifyToken = (token) => {
   };
   
   module.exports = { generateToken, verifyToken, hashPassword, comparePassword };
+
+  
