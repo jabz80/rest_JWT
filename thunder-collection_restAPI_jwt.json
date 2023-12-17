@@ -1,0 +1,152 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "restAPI_jwt",
+    "dateExported": "2023-12-17T15:57:45.267Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "0f098d25-88c5-45ba-937b-707ad56b9450",
+            "name": "/ api",
+            "containerId": "",
+            "created": "2023-12-17T14:30:08.125Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "6f234054-3fd0-4a2b-ac6a-06f9bff15fec",
+            "name": "/ auth",
+            "containerId": "0f098d25-88c5-45ba-937b-707ad56b9450",
+            "created": "2023-12-17T14:30:17.895Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "00543b3e-c5ac-4473-9125-7a2e15766a11",
+            "name": "/test/api/auth",
+            "containerId": "",
+            "created": "2023-12-17T14:56:09.271Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "e32a905c-2908-4df1-bbfe-5d7e5698ecc1",
+            "name": "/ actions",
+            "containerId": "00543b3e-c5ac-4473-9125-7a2e15766a11",
+            "created": "2023-12-17T14:58:37.436Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "2bf4e607-e949-4b1c-9921-c9b263130dfc",
+            "colId": "07e5e3dd-0c4c-4a89-b730-5f50cfcdfec1",
+            "containerId": "",
+            "name": "/",
+            "url": "http://localhost:5050/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-17T14:19:36.104Z",
+            "modified": "2023-12-17T14:21:18.807Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "843760d5-b77f-42b8-a5ab-f6723c7e08b1",
+            "colId": "07e5e3dd-0c4c-4a89-b730-5f50cfcdfec1",
+            "containerId": "6f234054-3fd0-4a2b-ac6a-06f9bff15fec",
+            "name": "/",
+            "url": "http://localhost:5050/api/auth",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-17T14:30:27.741Z",
+            "modified": "2023-12-17T14:30:55.233Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "74e8a5ad-60e5-41bf-8940-f7c061754518",
+            "colId": "07e5e3dd-0c4c-4a89-b730-5f50cfcdfec1",
+            "containerId": "e32a905c-2908-4df1-bbfe-5d7e5698ecc1",
+            "name": "/ hash",
+            "url": "http://localhost:5050/test/api/auth/actions/hash",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-17T14:55:49.586Z",
+            "modified": "2023-12-17T15:04:59.060Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"12345\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "552a2316-1bee-49d8-adf5-7aeb142bc7ac",
+            "colId": "07e5e3dd-0c4c-4a89-b730-5f50cfcdfec1",
+            "containerId": "e32a905c-2908-4df1-bbfe-5d7e5698ecc1",
+            "name": "/ testhash",
+            "url": "http://localhost:5050/test/api/auth/actions/testhash",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-17T15:07:50.235Z",
+            "modified": "2023-12-17T15:10:18.380Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"123457\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "574a8834-a104-4208-8a85-34ec7a09a8f4",
+            "colId": "07e5e3dd-0c4c-4a89-b730-5f50cfcdfec1",
+            "containerId": "e32a905c-2908-4df1-bbfe-5d7e5698ecc1",
+            "name": "/ generatetoken",
+            "url": "http://localhost:5050/test/api/auth/actions/generatetoken",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-12-17T15:17:55.484Z",
+            "modified": "2023-12-17T15:18:44.178Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"123457\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "47178c35-4ac5-4d3a-a002-46731583ebe7",
+            "colId": "07e5e3dd-0c4c-4a89-b730-5f50cfcdfec1",
+            "containerId": "e32a905c-2908-4df1-bbfe-5d7e5698ecc1",
+            "name": "/ verifytoken",
+            "url": "/test/api/auth/actions/verifytoken",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-12-17T15:22:45.486Z",
+            "modified": "2023-12-17T15:25:49.906Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJuYW1lIjoidGVzdFVTRVIiLCJwYXNzd29yZCI6IjEyMzQ1In0sImlhdCI6MTcwMjgyNjMyNCwiZXhwIjoxNzAyODI5OTI0fQ.YeC8UyzEeEe6u5LWPLqiQPo1CF3j1d6H0398qz1QLGc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"123457\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:5050"
+        }
+    }
+}
